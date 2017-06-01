@@ -1,0 +1,8 @@
+apps:
+  - script: ./bin/www
+    name: beanstalk-docker-express-test 
+    exec_mode: cluster
+    instances: max
+    env:
+      NODE_ENV: development
+      PORT: 3000
